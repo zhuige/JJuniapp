@@ -4,7 +4,7 @@
 		<!-- 视频播放 -->
 		<!-- #ifdef MP-WEIXIN -->
 		<view class="player" v-if="movieDetail.trailers[0].medium">
-			<image :src="movieDetail.trailers[0].medium" class="movie"></image>
+			<image :src="movieDetail.trailers[0].medium" class="movie" @click="lookMe(0)"></image>
 		</view>
 		<!-- #endif -->
 		<!-- #ifndef MP-WEIXIN -->
@@ -238,6 +238,8 @@
 					this.plotPicsArr.map((value) => {
 						arr.push(value.image);
 					})
+				} else {
+					arr.push(this.movieDetail.trailers[0].medium);
 				}
 				uni.previewImage({
 					urls: arr,

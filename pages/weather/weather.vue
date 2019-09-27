@@ -7,7 +7,7 @@
 			<input placeholder="江门" maxlength="10" class="search-text" confirm-type="search" @confirm="searchMe" v-model="keywords" />
 		</view>
 		<view class="suggest" v-if="weatherList.length > 0">
-			{{city}}{{suggest}}
+			{{oldWords}}{{suggest}}
 		</view>
 		<view class="weather-block" v-for="(item, index) in weatherList" :key="index">
 			<view class="weather-icon-wapper">
@@ -45,7 +45,8 @@
 				city: '江门',
 				weatherList: [],
 				month: '',
-				suggest: ''
+				suggest: '',
+				oldWords: '江门'
 			}
 		},
 		onLoad() {
@@ -85,6 +86,7 @@
 								val.fengli = val.fengli.slice(9,val.fengli.length-3);
 								val.low = val.low.slice(2);
 								val.high = val.high.slice(2);
+								this.oldWords = this.city;
 							})
 						}
 					},
