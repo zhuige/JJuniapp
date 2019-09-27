@@ -41,7 +41,8 @@
 		methods: {
 			getNewMovieRankingList() {
 				uni.showLoading({
-					mask: false
+					mask: false,
+					title: ''
 				})
 				uni.request({
 					url: this.baseUrl+'/v2/movie/new_movies',

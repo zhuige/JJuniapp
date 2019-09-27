@@ -84,7 +84,7 @@
 		</block>
 		<!-- end -->
 		<!-- 剧照 -->
-		<view class="scroll-block" v-if="plotPicsArr.length > 0">
+		<view class="scroll-block" v-if="plotPicsArr.length > 0 && movieDetail.title != undefined">
 			<view class="plots-title">
 				剧照
 			</view>
@@ -204,6 +204,10 @@
 				});
 			},
 			getMovieDetailList() {
+				uni.showLoading({
+					mask: false,
+					title: ''
+				})
 				uni.request({
 					url: this.baseUrl + '/v2/movie/subject/' + this.id,
 					method: 'GET',
@@ -219,6 +223,9 @@
 							});
 						}
 					},
+					complete() {
+						uni.hideLoading();
+					}
 				});
 			},
 			lookMe(index, type) {

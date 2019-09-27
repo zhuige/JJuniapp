@@ -6,8 +6,8 @@
 			</view>
 			<input placeholder="江门" maxlength="10" class="search-text" confirm-type="search" @confirm="searchMe" v-model="keywords" />
 		</view>
-		<view class="suggest">
-			{{suggest}}
+		<view class="suggest" v-if="weatherList.length > 0">
+			{{city}}{{suggest}}
 		</view>
 		<view class="weather-block" v-for="(item, index) in weatherList" :key="index">
 			<view class="weather-icon-wapper">
@@ -67,7 +67,10 @@
 				this.getWeather();
 			},
 			getWeather() {
-				uni.showLoading();
+				uni.showLoading({
+					title: '',
+					mark: false
+				});
 				let myDate = new Date();
 				this.month = myDate.getMonth()
 				uni.request({
@@ -75,14 +78,15 @@
 					method: 'POST',
 					header: this.header,
 					success: (res) => {
-						this.weatherList = res.data.data.forecast;
-						this.suggest = res.data.data.ganmao;
-						this.weatherList.map((val) => {
-							val.fengli = val.fengli.slice(9,val.fengli.length-3);
-							val.low = val.low.slice(2);
-							val.high = val.high.slice(2);
-						})
-						
+						if(res.data.code == 200) {
+							this.weatherList = res.data.data.forecast;
+							this.suggest = res.data.data.ganmao;
+							this.weatherList.map((val) => {
+								val.fengli = val.fengli.slice(9,val.fengli.length-3);
+								val.low = val.low.slice(2);
+								val.high = val.high.slice(2);
+							})
+						}
 					},
 					complete: (e)=> {
 						if(e.data.code != 200) {
