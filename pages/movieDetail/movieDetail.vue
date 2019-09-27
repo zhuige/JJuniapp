@@ -1,5 +1,6 @@
 <template>
 	<view class="page">
+		<block v-if="movieDetail.title != undefined">
 		<!-- 视频播放 -->
 		<!-- #ifdef MP-WEIXIN -->
 		<view class="player" v-if="movieDetail.trailers[0].medium">
@@ -80,9 +81,10 @@
 				</view>
 			</scroll-view>
 		</view>
+		</block>
 		<!-- end -->
 		<!-- 剧照 -->
-		<view class="scroll-block">
+		<view class="scroll-block" v-if="plotPicsArr.length > 0">
 			<view class="plots-title">
 				剧照
 			</view>
@@ -91,6 +93,7 @@
 			</scroll-view>
 		</view>
 		<!-- end -->
+		
 	</view>
 </template>
 

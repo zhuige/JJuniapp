@@ -72,19 +72,19 @@
 			searchMe() {
 				if(this.keywords == '叶树媚') {
 					uni.showModal({
-						content: '老婆好',
+						content: '老婆好 , 爱你么么哒',
 						showCancel: false
 					});
 					return;
 				}else if (this.keywords == '追哥') {
 					uni.showModal({
-						content: '话不多说，追哥牛批',
+						content: '话不多说 , 追哥牛批',
 						showCancel: false
 					});
 					return;
 				}else if (this.keywords == '梁俊杰') {
 					uni.showModal({
-						content: '话不多说，梁俊杰牛批',
+						content: '话不多说 , 梁俊杰牛批',
 						showCancel: false
 					});
 					return;

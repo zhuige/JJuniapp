@@ -82,6 +82,16 @@
 							val.low = val.low.slice(2);
 							val.high = val.high.slice(2);
 						})
+						
+					},
+					complete: (e)=> {
+						if(e.data.code != 200) {
+							uni.showToast({
+								title: e.data.msg,
+								duration: 1500,
+								icon: 'none'
+							});
+						}
 						uni.hideLoading();
 					}
 				})
