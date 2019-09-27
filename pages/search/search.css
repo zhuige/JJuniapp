@@ -1,0 +1,54 @@
+.search-ico{
+	width: 40upx;
+	height: 40upx;
+}
+.search-text{
+	font-size: 14px;
+	background-color: #eaeaea;
+	height: 60upx;
+	width: 650upx;
+}
+/deep/.uni-input-form{
+	height: 100%;
+}
+.search-block{
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	padding-bottom: 20upx;
+	position: fixed;
+	top: 100;
+	z-index: 1;
+	background-color: #F8F8F8;
+}
+.search-ico-wapper{
+	background-color: #eaeaea;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding: 0upx 10upx;
+}
+
+.poster {
+	width: 200upx;
+	height: 270upx;
+}
+.movie-list{
+	display: flex;
+	flex-wrap: wrap;
+	padding: 100upx 10upx 0upx;
+	justify-content: flex-start;
+}
+.movie-wapper{
+	padding: 10upx 20upx;
+}
+.movie-name{
+	width:200upx;
+	margin-top: 10upx;
+	font-size: 14px;
+	font-weight: bold;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}

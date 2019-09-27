@@ -1,0 +1,12 @@
+.black{
+	height: 100%;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	background-color: #000000;
+	position: fixed;
+}
+.cover{
+	align-self: center;
+}

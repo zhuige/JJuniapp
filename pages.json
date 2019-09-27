@@ -1,0 +1,135 @@
+{
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/index/index",
+			"style": {
+				"app-plus": {
+					"titleNView": false //设置禁用原生导航栏
+				},
+				"enablePullDownRefresh":true //下拉刷新 单页面的
+			}
+		}
+	    ,{
+            "path" : "pages/search/search",
+            "style" : {
+				"navigationBarTitleText": "搜索",
+				"enablePullDownRefresh":true
+			}
+        },
+		{
+		    "path" : "pages/weather/weather",
+		    "style" : {
+				"navigationBarTitleText": "天气",
+				"navigationBarBackgroundColor":"#2C2A36",
+				"navigationBarTextStyle":"white"
+			}
+		},
+		{
+            "path" : "pages/me/me",
+            "style" : {
+				"app-plus": {
+					"titleNView": false //设置禁用原生导航栏
+				},
+				"navigationBarTextStyle":"white",
+				"navigationBarTitleText":"我的",
+				"navigationBarBackgroundColor": "#ffd655"
+			}
+        }
+        ,{
+            "path" : "pages/movieDetail/movieDetail",
+            "style": {
+            	"app-plus": {
+            		"titleNView": {
+						"type":"transparent",
+						"buttons": [{"type":"share"}]
+					}
+            	},
+				"navigationBarTitleText": "电影详情"
+            }
+        }
+        ,{
+            "path" : "pages/cover/cover",
+            "style" : {
+				"navigationBarTitleText": "图片预览"
+			}
+        }
+        ,{
+            "path" : "pages/registLogin/registLogin",
+            "style" : {
+				"navigationBarTitleText": "登录/注册",
+				"navigationBarTextStyle":"white",
+				"navigationBarBackgroundColor": "#ffd655"
+			}
+        }
+        ,{
+            "path" : "pages/meInfo/meInfo",
+            "style" : {
+				"navigationBarTextStyle":"white",
+				"navigationBarBackgroundColor": "#ffd655",
+				"navigationBarTitleText": "用户设置"
+			}
+        }
+        ,{
+            "path" : "pages/meNickName/meNickName",
+            "style" : {
+				"navigationBarTextStyle":"white",
+				"navigationBarBackgroundColor": "#ffd655",
+				"navigationBarTitleText": "名称"
+			}
+        }
+        ,{
+            "path" : "pages/meBirthday/meBirthday",
+            "style" : {
+				"navigationBarTextStyle":"white",
+				"navigationBarBackgroundColor": "#ffd655",
+				"navigationBarTitleText": "生日"
+			}
+        }
+        ,{
+            "path" : "pages/editSex/editSex",
+            "style" : {
+				"navigationBarTextStyle":"white",
+				"navigationBarBackgroundColor": "#ffd655",
+				"navigationBarTitleText": "性别"
+			}
+        }
+    ],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "追哥电影",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8"
+	},
+	"tabBar": {
+		"color": "#bfbfbf",
+		"selectedColor": "#515151",
+		"borderStyle": "black",
+		"backgroundColor": "#ffffff",
+		"list": [
+			{
+				"pagePath":"pages/index/index",
+				"text":"首页",
+				"iconPath":"static/tabBarIco/index.png",
+				"selectedIconPath":"static/tabBarIco/index_sel.png"
+			},
+			{
+				"pagePath":"pages/search/search",
+				"text":"搜索",
+				"iconPath":"static/tabBarIco/search.png",
+				"selectedIconPath":"static/tabBarIco/search_sel.png"
+			},
+			{
+				"pagePath":"pages/weather/weather",
+				"text":"天气",
+				"iconPath":"static/tabBarIco/weather.png",
+				"selectedIconPath":"static/tabBarIco/weather-select.png"
+			},
+			{
+				"pagePath":"pages/me/me",
+				"text":"我的",
+				"iconPath":"static/tabBarIco/me.png",
+				"selectedIconPath":"static/tabBarIco/me_sel.png"
+			}
+		]
+	}
+}
