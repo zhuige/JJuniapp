@@ -229,17 +229,15 @@
 						}
 					},
 					complete: (e)=> {
-						if(e.statusCode != 200) {
-							uni.showToast({
-								title:'服务器出错',
-								icon: 'none'
-							})
-						}
 						uni.stopPullDownRefresh();
 					}
 				})
 			},
 			geiMovieTop205List() {
+				uni.showLoading({
+					mask: false,
+					title: '加载中...'
+				});
 				uni.request({
 					url: this.baseUrl+'/v2/movie/top250',
 					method: 'GET',
@@ -253,6 +251,9 @@
 							this.movieTop205List =this.movieTop205List.concat(res.data.subjects);
 							this.Top205Total = res.data.total;
 						}
+					},
+					complete: (e)=> {
+						uni.hideLoading();
 					}
 				});
 			},

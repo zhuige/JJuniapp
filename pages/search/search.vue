@@ -42,7 +42,7 @@
 			getNewMovieRankingList() {
 				uni.showLoading({
 					mask: false,
-					title: ''
+					title: '加载中...'
 				})
 				uni.request({
 					url: this.baseUrl+'/v2/movie/new_movies',
@@ -54,12 +54,6 @@
 						}
 					},
 					complete: (e)=> {
-						if(e.statusCode != 200) {
-							uni.showToast({
-								title:'服务器出错',
-								icon: 'none'
-							})
-						}
 						uni.hideLoading();
 						uni.stopPullDownRefresh();
 					}

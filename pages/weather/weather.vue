@@ -69,7 +69,7 @@
 			},
 			getWeather() {
 				uni.showLoading({
-					title: '',
+					title: '加载中...',
 					mark: false
 				});
 				let myDate = new Date();

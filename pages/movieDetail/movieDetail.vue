@@ -206,7 +206,7 @@
 			getMovieDetailList() {
 				uni.showLoading({
 					mask: false,
-					title: ''
+					title: '加载中...'
 				})
 				uni.request({
 					url: this.baseUrl + '/v2/movie/subject/' + this.id,
