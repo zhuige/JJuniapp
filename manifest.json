@@ -1,9 +1,9 @@
 {
-    "name" : "追哥影资天气",
+    "name" : "追哥影资",
     "appid" : "__UNI__79B671C",
     "description" : "电影预告",
     "versionName" : "1.0.0",
-    "versionCode" : "100",
+    "versionCode" : 10000,
     "transformPx" : false,
     "app-plus" : {
         /* 5+App特有相关 */

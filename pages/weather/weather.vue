@@ -97,6 +97,7 @@
 								duration: 1500,
 								icon: 'none'
 							});
+							this.keywords = this.oldWords;
 						}
 						uni.hideLoading();
 					}
