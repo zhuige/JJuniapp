@@ -190,43 +190,43 @@
 	.weather-icon {
 		width: 270upx;
 		height: 270upx;
-		background: url(https://i1.fuimg.com/700222/0fc960c519bf7154.gif) no-repeat 0 0;
+		background: url(https://raw.githubusercontent.com/L-doubleJ/JJmovie-mpweixin-/master/static/weather.gif) no-repeat 0 0;
 	}
 
 	.sun {
-		background: url(https://i1.fuimg.com/700222/0fc960c519bf7154.gif) no-repeat 0 0;
+		background: url(https://raw.githubusercontent.com/L-doubleJ/JJmovie-mpweixin-/master/static/weather.gif) no-repeat 0 0;
 	}
 
 	.thunder {
 	
-		background: url(https://i1.fuimg.com/700222/0fc960c519bf7154.gif) no-repeat -300px 0;
+		background: url(https://raw.githubusercontent.com/L-doubleJ/JJmovie-mpweixin-/master/static/weather.gif) no-repeat -300px 0;
 		
 	}
 
 	.littleRainy {
 		
-		background: url(https://i1.fuimg.com/700222/0fc960c519bf7154.gif) no-repeat -155px 0;
+		background: url(https://raw.githubusercontent.com/L-doubleJ/JJmovie-mpweixin-/master/static/weather.gif) no-repeat -155px 0;
 	
 	}
 
 	.bigRainy {
 		
-		background: url(https://i1.fuimg.com/700222/0fc960c519bf7154.gif) no-repeat -300px -183px;
+		background: url(https://raw.githubusercontent.com/L-doubleJ/JJmovie-mpweixin-/master/static/weather.gif) no-repeat -300px -183px;
 		
 	}
 
 	.muchCloud {
-		background: url(https://i1.fuimg.com/700222/0fc960c519bf7154.gif) no-repeat -155px -183px;
+		background: url(https://raw.githubusercontent.com/L-doubleJ/JJmovie-mpweixin-/master/static/weather.gif) no-repeat -155px -183px;
 	}
 
 	.centerRainy {
 	
-		background: url(https://i1.fuimg.com/700222/0fc960c519bf7154.gif) no-repeat -465px -183;
+		background: url(https://raw.githubusercontent.com/L-doubleJ/JJmovie-mpweixin-/master/static/weather.gif) no-repeat -465px -183;
 	}
 
 	.overcast {
 		
-		background: url(https://i1.fuimg.com/700222/0fc960c519bf7154.gif) no-repeat 0 -183px;
+		background: url(https://raw.githubusercontent.com/L-doubleJ/JJmovie-mpweixin-/master/static/weather.gif) no-repeat 0 -183px;
 		
 	}
 </style>
