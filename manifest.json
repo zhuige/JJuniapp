@@ -2,8 +2,8 @@
     "name" : "追哥影资",
     "appid" : "__UNI__79B671C",
     "description" : "电影预告",
-    "versionName" : "1.0.0",
-    "versionCode" : 10000,
+    "versionName" : "1.0.1",
+    "versionCode" : 10001,
     "transformPx" : false,
     "app-plus" : {
         /* 5+App特有相关 */
@@ -15,7 +15,8 @@
         },
         "modules" : {
             "Share" : {},
-            "OAuth" : {}
+            "OAuth" : {},
+            "VideoPlayer" : {}
         },
         /* 模块配置 */
         "distribute" : {
@@ -104,9 +105,9 @@
             },
             "splashscreen" : {
                 "android" : {
-                    "hdpi" : "F:/uniapp/uni-app商业级应用实战【NEXT学院】/uni-app商业级应用实战/timg.png",
-                    "xhdpi" : "F:/uniapp/uni-app商业级应用实战【NEXT学院】/uni-app商业级应用实战/timg.png",
-                    "xxhdpi" : "F:/uniapp/uni-app商业级应用实战【NEXT学院】/uni-app商业级应用实战/timg.png"
+                    "hdpi" : "F:/uniapp/uni-app商业级应用实战【NEXT学院】/uni-app商业级应用实战/2.png",
+                    "xhdpi" : "F:/uniapp/uni-app商业级应用实战【NEXT学院】/uni-app商业级应用实战/2.png",
+                    "xxhdpi" : "F:/uniapp/uni-app商业级应用实战【NEXT学院】/uni-app商业级应用实战/2.png"
                 }
             }
         },
