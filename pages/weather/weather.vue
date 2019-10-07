@@ -73,7 +73,7 @@
 					mark: false
 				});
 				let myDate = new Date();
-				this.month = myDate.getMonth()
+				this.month = myDate.getMonth() + 1;
 				uni.request({
 					url: 'https://www.apiopen.top/weatherApi?city='+this.city,
 					method: 'POST',

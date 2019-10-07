@@ -40,10 +40,6 @@
 		},
 		methods: {
 			getNewMovieRankingList() {
-				uni.showLoading({
-					mask: false,
-					title: '加载中...'
-				})
 				uni.request({
 					url: this.baseUrl+'/v2/movie/new_movies',
 					method: 'GET',
@@ -54,7 +50,6 @@
 						}
 					},
 					complete: (e)=> {
-						uni.hideLoading();
 						uni.stopPullDownRefresh();
 					}
 				});
